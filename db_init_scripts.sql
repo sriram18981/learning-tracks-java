@@ -260,7 +260,7 @@ CREATE TABLE `assignment_answers` (
   KEY `assessment_answers_FK_3` (`answerId`),
   CONSTRAINT `assessment_answers_FK_2` FOREIGN KEY (`channelId`) REFERENCES `channels` (`id`),
   CONSTRAINT `assignment_answers_FK` FOREIGN KEY (`assignmentId`) REFERENCES `assignments` (`id`)
-) ENGINE = InnoDB AUTO_INCREMENT = 39 DEFAULT CHARSET = utf8 COLLATE = utf8_unicode_ci COMMENT = 'Answers submitted by the member for a particular assessment';
+) ENGINE = InnoDB DEFAULT CHARSET = utf8 COLLATE = utf8_unicode_ci COMMENT = 'Answers submitted by the member for a particular assessment';
 
 
 
